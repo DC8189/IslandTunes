@@ -20,7 +20,7 @@
 			<h2 id="title">In Dino Dil Mera</h2>
 			<h3 id="artist">Pritam Chakraborty</h3>
 			<div class="img_container">
-				<img src="images/indino.jpg" alt="in dino dil mera">
+				<img src="indino.jpg" alt="in dino dil mera">
 			</div>
 			<audio src="music/InDino.mp3"></audio>
 			<div class="music_controls">
@@ -88,8 +88,8 @@ isplaying? pauseMusic()  : playMusic();
 const loadsong = (songs) => {
 title.textContent = songs.title;
 artist.textContent = songs.artist;
-music.src = "music/" + songs.name + ".mp3";
-img.src = "images/" + songs.name + ".jpg";   
+music.src = songs.name + ".mp3";
+img.src = songs.name + ".jpg";   
 };
 
 songIndex = 0;
